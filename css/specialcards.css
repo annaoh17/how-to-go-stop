@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'JetBrains-Mono';
-    src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+    src: url('../fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf');
     }
     h1{
         position:relative;
@@ -63,7 +63,7 @@
     }
 
     .button1:hover, .button2:hover, .button3:hover {
-        border-color: #BA1E2A; /* bored will turn red whenn hovered over */
+        border-color: #BA1E2A; /* border will turn red whenn hovered over */
         color: #BA1E2A;
     }
     
