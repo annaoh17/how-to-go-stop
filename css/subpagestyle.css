@@ -1,0 +1,319 @@
+*{
+    scroll-behavior: smooth;
+    color:black
+    
+}
+
+@font-face {
+font-family: 'JetBrains Mono';
+src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+h1{
+  position:relative;
+    font-family: 'JetBrains Mono';
+    text-align: center;
+    font-size: 110px;
+    word-spacing:20%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: black
+}
+
+
+*{
+
+scroll-behavior: smooth;
+
+}
+
+body {
+font-family: 'JetBrains Mono';
+}
+
+/*LEARN THE CARDS SUBPAGE*/
+.learn-the-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'JetBrains Mono';
+    gap: 10px;
+    width: 90%; 
+    margin: auto; /* centers cards horizontally w desktop */
+}
+
+.cards2 {
+    width: 30%; 
+    height: auto;
+}
+
+ /* will ensure images resize properly */
+.learn-the-cards-container img {
+    width: 100%;  
+    height: auto;   
+    margin-bottom: 5%;   
+}
+
+.learn-the-cards-container a {
+    text-decoration: none; 
+    text-align: center;
+}
+
+/* responsive code*/
+@media only screen and (max-width: 800px) {
+    .learn-the-cards-container {
+        flex-direction: column; /* will stack items vertically */
+        align-items: center; /* center items in a column */
+    }
+
+    .cards2 {
+        width: 70%; /* size when stacked */
+    }
+}
+
+footer{
+display: flex;
+font-family: 'JetBrains Mono';
+justify-content: flex-end;
+text-align: right;
+padding-right: 1.5%;
+margin-top: 25px;
+padding-bottom: 10px;
+}
+
+.footer-links {
+display: flex; 
+gap: 20px; 
+font-size: 16px;
+}
+
+/*SET-UP SUBPAGE*/
+*{
+
+    scroll-behavior: smooth;
+    
+    }
+    
+    body {
+    font-family: 'JetBrains Mono';
+    }
+    .set-up-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'JetBrains Mono';
+        gap: 10px; 
+        width: 90%; 
+        margin: auto; /* centers cards horizontally w desktop */
+    }
+    
+    .ppl {
+        width: 30%; 
+        height: auto;
+        margin-bottom: 10%;
+    }
+    
+    /* will ensure images resize properly */
+    .set-up-container img {
+        width: 100%;  
+        height: auto;    
+        margin-bottom: 9%;
+        margin-top: 15%;
+    }
+    
+    .set-up-container a {
+        text-decoration: none; 
+        text-align: center;
+    }
+    
+    /* responsive code*/
+    @media only screen and (max-width: 800px) {
+        .set-up-container {
+            flex-direction: column; /* will stack items vertically */
+            align-items: center; /* center items in a column */
+        }
+    
+        .ppl {
+            width: 70%; /* size when stacked */
+        }
+    }
+
+footer{
+    display: flex;
+    font-family: 'JetBrains Mono';
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 1.5%;
+    margin-top: 90px;
+    padding-bottom: 10px;
+    }
+
+/*HOW TO PLAY SUBPAGE*/
+    *{
+
+        scroll-behavior: smooth;
+        
+        }
+        
+        body {
+        font-family: 'JetBrains Mono';
+        }
+
+.how-to-play-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'JetBrains Mono';
+    gap: 10px; 
+    width: 90%; 
+    margin: auto; /* centers cards horizontally w desktop */
+}
+
+.cards4 {
+    width: 30%;
+    height: auto;
+}
+
+ /* will ensure images resize properly */
+.how-to-play-container img {
+    width: 100%;  
+    height: auto;    
+    margin-bottom: 5%;  
+}
+
+.how-to-play-container a {
+    text-decoration: none; 
+    text-align: center;
+}
+
+/* responsive code*/
+@media only screen and (max-width: 800px) {
+    .how-to-play-container {
+        flex-direction: column; /* will stack items vertically */
+        align-items: center; /* center items in a column */
+    }
+
+    .cards4 {
+        width: 70%; /* size when stacked */
+    }
+}
+    
+    
+footer{
+    display: flex;
+    font-family: 'JetBrains Mono';
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 1.5%;
+    margin-top: 90px;
+    padding-bottom: 10px;
+    }
+
+    /*SUBPAGE HEADER BUTTONS*/
+        .learn-cards-button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding-right: 1.5%;
+            padding-left: 1.5%;
+            margin-top: 25px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .button1, .button2, .button3 {
+            display: inline-block;
+            text-decoration: none; 
+            border: 1px solid; 
+            border-color: black;
+            border-radius: 6px;
+            padding: 5px 10px; 
+            margin: 0; 
+        }
+        
+        .button1 {
+            margin-right: auto; 
+        }
+        
+        .button2, .button3 {
+            margin-left: 10px;
+        }
+
+        .set-up-button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding-right: 1.5%;
+            padding-left: 1.5%;
+            margin-top: 25px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .button1, .button2, .button3 {
+            display: inline-block;
+            text-decoration: none; 
+            border: 1px solid; 
+            border-color: black;
+            border-radius: 6px;
+            padding: 5px 10px; 
+            margin: 0;  
+        }
+        
+        .button1 {
+            margin-right: auto; 
+        }
+        
+        .button2, .button3 {
+            margin-left: 10px;
+        }
+
+        .play-button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding-right: 1.5%;
+            padding-left: 1.5%;
+            margin-top: 25px;
+            padding-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .button1, .button2, .button3 {
+            display: inline-block; 
+            text-decoration: none; 
+            border: 1.5px solid; 
+            border-color: black;
+            border-radius: 6px;
+            padding: 5px 10px; 
+            margin: 0; 
+        }
+        
+        .button1 {
+            margin-right: auto; 
+        }
+        
+        .button2, .button3 {
+            margin-left: 10px; 
+        }
+
+        .button1:hover, .button2:hover, .button3:hover {
+            border-color: #BA1E2A; /* bored will turn red whenn hovered over */
+            color: #BA1E2A;
+        }
+        
+        .button1:active, .button2:active, .button3:active {
+            color: #681017;
+            border-color: #681017; /* border turns darker red when clicked */
+        }
+
+        body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+            background-image: url(../images/background-mat-opacity.jpg);
+            background-size: cover;
+          }

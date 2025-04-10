@@ -1,0 +1,179 @@
+*{
+    scroll-behavior: smooth;
+  
+    color:black
+    
+}
+
+.go-back{
+    position:relative;
+}
+
+.go-back img{
+    width: 40px; 
+    height: auto;
+    cursor: pointer;
+    margin-left: 120px;
+    margin-top: 17px;
+}
+
+/*@font-face {
+    font-family: 'Gluten-Backslant';
+    src: url('/fonts/Gluten-Bold.woff');
+    src: url('/fonts/Gluten-Bold.woff2');
+    }
+
+    h1{
+        position:relative;
+        font-family: "Gluten-Backslant";
+        text-align: center;
+        font-size: 110px;
+        word-spacing:20%;
+        margin-bottom: 15px;
+        margin-top: -1px;
+        color: black
+    }
+    */
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+}
+        h1{
+          position:relative;
+            font-family: 'JetBrains Mono';
+            text-align: center;
+            font-size: 120px;
+            word-spacing:20%;
+            margin-bottom: 1%;
+            margin-top: -1px;
+            color: black
+        }
+
+    .points-paragraphs {
+        display: flex;
+        justify-content: center;  /* centers content horizontally */
+        align-items: center;      /* centers content vertically */
+        flex-direction: column;   /* ensures elements stack vertically */
+        font-family: 'JetBrains Mono';
+        text-align: center;       /* ensures all text inside is centered */
+        width: 100%;              /* takes the width to center it properly */
+    }
+    
+    .points-paragraphs p {
+        width: 65%; /* controls the width of the text block */
+        margin: 4% auto; /* this centers item within the container */
+    }
+    
+    .points-paragraphs p span {
+        display: block;
+        font-size: 14pt;
+        line-height: 1.56;
+        margin-bottom: 4%;
+    }
+    
+
+    .howtoplay-button-container {
+        font-family: 'JetBrains Mono';
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        margin-top: 25px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    
+    .button1, .button2, .button3 {
+        display: inline-block;
+        text-decoration: none; 
+        border: 1.5px solid; 
+        border-color: black;
+        border-radius: 6px;
+        padding: 5px 10px; 
+        margin: 0; 
+        white-space: nowrap; 
+    }
+    
+    .button1 {
+        margin-right: auto; 
+    }
+    
+    .button2, .button3 {
+        margin-left: 10px;
+    }
+
+    .button1:hover, .button2:hover, .button3:hover {
+        border-color: #BA1E2A; /* border will turn red whenn hovered over */
+        color: #BA1E2A;
+    }
+    
+    .button1:active, .button2:active, .button3:active {
+        color: #681017;
+        border-color: #681017; /* border turns darker red when clicked */
+    }
+
+    .point-cards{
+        position:relative;
+        font-family: 'JetBrains Mono';
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .point-cards p{
+        margin-bottom: 0.5%;
+        text-decoration: underline
+    }
+
+   
+    .point-cards span{
+        text-decoration: underline;
+    }
+
+    .pointcard-groups{
+    margin-top: 35px;
+}
+
+   .pointcard-groups img{
+    width: 200px; 
+    height: auto; 
+    margin: 6px;
+    margin-top: -1%;
+    margin-bottom: 4%;
+   }
+
+   .pointcard-groups p{
+text-decoration: underline;
+   }
+
+
+    .backtotop {
+        position: fixed;
+        bottom: 70px;
+        right: 100px;
+    }
+    
+    .backtotop img {
+        width: 40px; 
+        height: auto;
+        cursor: pointer; 
+    }
+    
+        footer{
+            display: flex;
+            font-family: 'JetBrains Mono';
+            justify-content: flex-end;
+            text-align: right;
+            padding-right: 1.5%;
+            margin-top: 90px;
+            padding-bottom: 10px;
+            font-size: 16px;
+            }
+    
+            body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+                background-image: url(../images/background-mat-opacity-longer.jpg);
+                background-size: cover;
+               }
+        
