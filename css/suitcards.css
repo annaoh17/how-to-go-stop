@@ -17,13 +17,13 @@
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
     }
 
     h1{
         position:relative;
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         text-align: center;
         font-size: 110px;
         word-spacing:20%;
@@ -33,7 +33,7 @@
     }
 
     .suit-cards-button-container {
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         display: flex;
         justify-content: space-between;
         align-items: center; 
@@ -75,7 +75,7 @@
 
     .suit-cards{
         position:relative;
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         font-size: 20px;
         text-align: center;
     }
@@ -104,7 +104,7 @@
 
     footer{
         display: flex;
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         justify-content: flex-end;
         text-align: right;
         padding-right: 1.5%;

@@ -5,13 +5,13 @@
 }
 
 @font-face {
-font-family: 'JetBrains Mono';
+font-family: 'JetBrains-Mono';
 src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
 }
 
 h1{
   position:relative;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     text-align: center;
     font-size: 110px;
     word-spacing:20%;
@@ -28,7 +28,7 @@ scroll-behavior: smooth;
 }
 
 body {
-font-family: 'JetBrains Mono';
+font-family: 'JetBrains-Mono';
 }
 
 /*LEARN THE CARDS SUBPAGE*/
@@ -38,7 +38,7 @@ font-family: 'JetBrains Mono';
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     gap: 10px;
     width: 90%; 
     margin: auto; /* centers cards horizontally w desktop */
@@ -75,7 +75,7 @@ font-family: 'JetBrains Mono';
 
 footer{
 display: flex;
-font-family: 'JetBrains Mono';
+font-family: 'JetBrains-Mono';
 justify-content: flex-end;
 text-align: right;
 padding-right: 1.5%;
@@ -97,7 +97,7 @@ font-size: 16px;
     }
     
     body {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     }
     .set-up-container {
         display: flex;
@@ -105,7 +105,7 @@ font-size: 16px;
         justify-content: center;
         text-align: center;
         font-size: 20px;
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         gap: 10px; 
         width: 90%; 
         margin: auto; /* centers cards horizontally w desktop */
@@ -144,7 +144,7 @@ font-size: 16px;
 
 footer{
     display: flex;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     justify-content: flex-end;
     text-align: right;
     padding-right: 1.5%;
@@ -160,7 +160,7 @@ footer{
         }
         
         body {
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         }
 
 .how-to-play-container {
@@ -169,7 +169,7 @@ footer{
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     gap: 10px; 
     width: 90%; 
     margin: auto; /* centers cards horizontally w desktop */
@@ -207,7 +207,7 @@ footer{
     
 footer{
     display: flex;
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     justify-content: flex-end;
     text-align: right;
     padding-right: 1.5%;

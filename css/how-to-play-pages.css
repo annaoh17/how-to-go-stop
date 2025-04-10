@@ -36,12 +36,12 @@
     */
 
 @font-face {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains-Mono';
     src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
 }
         h1{
           position:relative;
-            font-family: 'JetBrains Mono';
+            font-family: 'JetBrains-Mono';
             text-align: center;
             font-size: 120px;
             word-spacing:20%;
@@ -74,7 +74,7 @@
     
 
     .howtoplay-button-container {
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrains-Mono';
         display: flex;
         justify-content: space-between;
         align-items: center; 
