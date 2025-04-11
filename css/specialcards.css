@@ -52,6 +52,7 @@
         padding: 5px 10px; 
         margin: 0; 
         white-space: nowrap; 
+        transition: background-color 0.4s, color 0.4s, border-color 0.4s;
     }
     
     .button1 {
@@ -62,14 +63,16 @@
         margin-left: 10px;
     }
 
-    .button1:hover, .button2:hover, .button3:hover {
-        border-color: #BA1E2A; /* border will turn red whenn hovered over */
-        color: #BA1E2A;
+    .button1:hover, .button2:hover, .button3:hover { /*Hoverable Buttons: https://www.w3schools.com/css/css3_buttons.asp*/
+        border-color: black; /* border will turn red whenn hovered over */
+        background-color: #BA1E2A;
+        color: beige;
     }
     
     .button1:active, .button2:active, .button3:active {
-        color: #681017;
-        border-color: #681017; /* border turns darker red when clicked */
+        color: beige;
+        background-color: #681017;
+        border-color: black; /* border turns darker red when it's clicked */
     }
 
     .special-cards{
@@ -116,7 +119,7 @@
         }
 
         body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
-            background-image: url(../images/background-mat-opacity-longer.jpg);
+            background-image: url(../images/background-mat-long.jpg);
             background-size: cover;
            }
     

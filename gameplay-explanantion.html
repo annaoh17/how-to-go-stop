@@ -23,5 +23,149 @@
     </div>
 
     <h1>Gameplay Explanation!</h1>
+    <div class="points-paragraphs">
+        <p>
+            <span>Before playing, decide if you want to play with chips, money, or nothing at all.</span>
+            <span> If you choose to play with chips, the number can vary depending on your preferences, the rules you've set, and the number of rounds you have decided to play. 
+                The goal is to accumulate the most points and chips to win the game! </span>
+            <span>If you prefer to play with money, that is entirely up to you and how you want to gamble. However, please be mindful when gambling. This option is not one I recommend!</span>
+            <span>If you decide to play for points only, then keep on reading!</span>
+        </p>
+    </div>
 
+        <hr/> <!--<hr>: The Thematic Break (Horizontal Rule) element: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
+
+    <div class="before-playing-text">
+        <span> Before playing, each player should look for these 4 things!: </span>
+    </div>
+
+    <div class="before-playing-text-subheading">
+        <span> —Click the photos to find out!— </span>
+    </div>
+
+    <!--How to Create Flip Card Click Effect using only html & css: https://www.youtube.com/watch?v=dHHmFHI0pNw-->
+    <!--https://codepen.io/pantz/pen/vOXvYg-->
+    <!--How TO - 3D Flip Box: https://www.w3schools.com/howto/howto_css_flip_box.asp-->
+    <div class="photo-grid">
+        <div class="flip-wrapper">
+          <input type="checkbox" id="flip1" class="flip-toggle">
+          <label for="flip1" class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/gameplay-explanation-smaller1.jpg">
+              </div>
+              <div class="flip-box-back">
+                <p>If a player starts with a hand with all 4 cards in one set, 
+                  then that player wins the game automatically.</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      
+        <div class="flip-wrapper">
+          <input type="checkbox" id="flip2" class="flip-toggle">
+          <label for="flip2" class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/gameplay-explanation-smaller2.jpg">
+              </div>
+              <div class="flip-box-back">
+                <p>If all players start with a hand of all 4 cards in one set, 
+                  then the game ends in a draw.</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      
+        <div class="flip-wrapper">
+          <input type="checkbox" id="flip3" class="flip-toggle">
+          <label for="flip3" class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/gameplay-explanation-smaller3.jpg">
+              </div>
+              <div class="flip-box-back">
+                <p>If the starting cards that are face up in the center of the table have all 4 cards in one set, 
+                  the game ends immediately without a winner.</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      
+        <div class="flip-wrapper">
+          <input type="checkbox" id="flip4" class="flip-toggle">
+          <label for="flip4" class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <img src="images/gameplay-explanation-smaller4.jpg">
+              </div>
+              <div class="flip-box-back">
+                <p>If 3 of the cards in the center are a part of one set, 
+                  those 3 cards are stacked together to be taken with the card that matches the stack.</p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+      
+      <hr class="photo-grid-below"/> <!--<hr>: The Thematic Break (Horizontal Rule) element: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
+
+    <div class="before-playing-text">
+        <span> The first person to play is the dealer. During each player's turn:
+        </span>
+    </div>
+<!--How to put image and text side-by-side in HTML?:https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html -->
+    <div class="how-to-play-section">
+        <div class="organization-cards-container">
+          <img src="images/organization-cards.jpg" alt="Organized cards">
+          <p> —Example of Collected Card Organization—</p>
+        </div>
+        <div class="instructions">
+          <!-- HTML Lists: https://www.w3schools.com/Html/html_lists.asp -->
+          <ul>
+            <li>Play a card from your hand that matches a card on the table.</li>
+            <li>After placing your card down, flip the top card from the deck and place it in the center with the rest of the cards on the table.</li>
+            <li>Even if you don't have a match in your hand, you still must place a card down and flip one from the deck.</li>
+            <li>If you're lucky, the card you flip might match something on the table — and you can collect those cards.</li>
+            <li>After you're done your turn, collect any cards that you matched.</li>
+            <li>Organize your collected cards in a way so both you and your opponent can see them.</li>
+            <li>The game continues until a player stops the round — either because they have enough points — or there are no more cards left to play.</li>
+            <li>Whoever wins, collect your chips, money, or bragging rights.</li>
+            <li>The winner becomes the new dealer for the next game.</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="photo-grid-below"/> <!--<hr>: The Thematic Break (Horizontal Rule) element: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/hr-->
+
+      <div class="before-playing-text">
+        <span> Other conditions:</span>
+    </div>
+
+    <div class="other-conditions">
+        <!-- HTML Lists: https://www.w3schools.com/Html/html_lists.asp -->
+        <ul>
+          <li>If there are already two cards of a set on the table, and you have one of the cards in that matching set, 
+            you decide which of the two cards you want to collect.</li>
+          <li>If there are already two cards of a set on the table, and you flip off a card from the deck that is a part of that said deck, 
+            you have to leave that card on the table and stack those three cards together. </li>
+        </ul>
+      </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="resources-citations.html">Resources/Citations</a>
+            <a href="copyright.html">Copyright</a>
+        </div>
+    </footer>
+    
+    <div class="backtotop">
+        <a href="#top">
+            <img src="images/up-arrow.png">
+        </a>
+    </div>
+</div>
+
+    
+</body>
     

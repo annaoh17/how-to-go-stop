@@ -1,12 +1,11 @@
 *{
     scroll-behavior: smooth;
-    color:black
     
 }
 
 @font-face {
 font-family: 'JetBrains-Mono';
-src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+src: url('../fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf');
 }
 
 h1{
@@ -59,7 +58,14 @@ font-family: 'JetBrains-Mono';
 .learn-the-cards-container a {
     text-decoration: none; 
     text-align: center;
+    color: black;
 }
+
+.learn-the-cards-container a:hover {
+    color: #BA1E2A;
+    text-decoration: underline;
+}
+    
 
 /* responsive code*/
 @media only screen and (max-width: 800px) {
@@ -88,6 +94,10 @@ display: flex;
 gap: 20px; 
 font-size: 16px;
 }
+
+.footer-links a{
+    color: black;
+  }
 
 /*SET-UP SUBPAGE*/
 *{
@@ -128,7 +138,14 @@ font-size: 16px;
     .set-up-container a {
         text-decoration: none; 
         text-align: center;
+        color: black;
     }
+
+    .set-up-container a:hover {
+        color: #BA1E2A;
+        text-decoration: underline;
+    }
+        
     
     /* responsive code*/
     @media only screen and (max-width: 800px) {
@@ -151,6 +168,10 @@ footer{
     margin-top: 90px;
     padding-bottom: 10px;
     }
+
+    .footer-links a{
+        color: black;
+      }
 
 /*HOW TO PLAY SUBPAGE*/
     *{
@@ -190,6 +211,12 @@ footer{
 .how-to-play-container a {
     text-decoration: none; 
     text-align: center;
+    color: black;
+}
+
+.how-to-play-container a:hover {
+    color: #BA1E2A;
+    text-decoration: underline;
 }
 
 /* responsive code*/
@@ -215,6 +242,10 @@ footer{
     padding-bottom: 10px;
     }
 
+    .footer-links a{
+        color: black;
+      }
+
     /*SUBPAGE HEADER BUTTONS*/
         .learn-cards-button-container {
             display: flex;
@@ -225,6 +256,7 @@ footer{
             margin-top: 25px;
             padding-bottom: 10px;
             font-size: 16px;
+    
         }
         
         .button1, .button2, .button3 {
@@ -232,6 +264,7 @@ footer{
             text-decoration: none; 
             border: 1px solid; 
             border-color: black;
+            color: black;
             border-radius: 6px;
             padding: 5px 10px; 
             margin: 0; 
@@ -293,6 +326,7 @@ footer{
             border-radius: 6px;
             padding: 5px 10px; 
             margin: 0; 
+            transition: background-color 0.4s, color 0.4s, border-color 0.4s;
         }
         
         .button1 {
@@ -303,14 +337,16 @@ footer{
             margin-left: 10px; 
         }
 
-        .button1:hover, .button2:hover, .button3:hover {
-            border-color: #BA1E2A; /* bored will turn red whenn hovered over */
-            color: #BA1E2A;
+        .button1:hover, .button2:hover, .button3:hover { /*Hoverable Buttons: https://www.w3schools.com/css/css3_buttons.asp*/
+            border-color: black; /* border will turn red whenn hovered over */
+            background-color: #BA1E2A;
+            color: beige;
         }
         
         .button1:active, .button2:active, .button3:active {
-            color: #681017;
-            border-color: #681017; /* border turns darker red when clicked */
+            color: beige;
+            background-color: #681017;
+            border-color: black; /* border turns darker red when it's clicked */
         }
 
         body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/

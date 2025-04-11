@@ -1,13 +1,12 @@
   
   *{
             scroll-behavior: smooth;
-            color:black
             
         }
 
  @font-face {
     font-family: 'JetBrains-Mono';
-    src: url('../fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf');
+    src: url('../fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf');
 }
         h1{
           position:relative;
@@ -16,6 +15,7 @@
             font-size: 120px;
             word-spacing:20%;
             margin-bottom: 30px;
+            padding-top: 1.2%;
             margin-top: 30px;
             color: black
         }
@@ -59,6 +59,12 @@ body {
 .grid-container a {
     text-decoration: none; 
     text-align: center;
+    color: black;
+}
+
+.grid-container a:hover{
+  color: #BA1E2A;
+  text-decoration: underline;
 }
 
 /* responsive code*/
@@ -87,6 +93,10 @@ footer{
   display: flex; 
   gap: 20px; 
   font-size: 16px;
+}
+
+.footer-links a{
+  color: black;
 }
 
 body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
