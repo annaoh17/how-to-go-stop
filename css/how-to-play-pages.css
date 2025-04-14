@@ -331,3 +331,27 @@ hr {
   .other-conditions li{
     margin-bottom: 3%;
   }
+
+  /*HOW TO USE "GO" AND "STOP" PAGE*/
+  .go-stop-hr{
+    border: none;
+    height: 3px;
+    background-color: black; 
+    width: 76%; /* controls how long or short the line is horizontally */
+    margin-left: auto;  /* centers the line */
+    margin-right: auto; /* also centers the line */
+    margin-top: 2%;
+  }  
+
+  .stop-choice {
+    font-family: 'JetBrains-Mono';
+    font-size: 12pt;
+    line-height: 1.56;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .stop-choice li{
+    margin-bottom: 3%;
+  }
+  
