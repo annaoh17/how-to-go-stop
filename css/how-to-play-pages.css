@@ -85,8 +85,6 @@
   }
 
   /*POINTS SYSTEM PAGE*/
-
-  
     h1{
       display: flex;
       position:relative;
@@ -165,6 +163,7 @@
   }
 
     /*responsive code*/
+   /* How TO - Responsive Text: https://www.w3schools.com/howto/howto_css_responsive_text.asp*/
   @media only screen and (max-width: 800px) {
     .point-cards {
       font-size: 1rem;
@@ -224,6 +223,7 @@ h1{
 }
 
   /*responsive code*/
+  /* How TO - Responsive Text: https://www.w3schools.com/howto/howto_css_responsive_text.asp*/
 @media (max-width: 800px){
   h1{
     font-size: 4.2rem;

@@ -42,6 +42,7 @@
         color: black
     }
   /*responsive code*/
+  /* How TO - Responsive Text: https://www.w3schools.com/howto/howto_css_responsive_text.asp*/
     @media (max-width: 800px){
         h1{
           font-size: 4.8rem;
@@ -109,6 +110,7 @@
         text-align: center;
     }
   /*responsive code*/
+  /* How TO - Responsive Text: https://www.w3schools.com/howto/howto_css_responsive_text.asp*/
     @media (max-width: 800px){
         .suit-cards{
           font-size: 1rem;

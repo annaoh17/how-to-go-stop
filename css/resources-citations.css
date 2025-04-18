@@ -42,8 +42,9 @@
         margin-top: -1px;
         color: black
     }
-    
+
   /*responsive code*/
+  /* How TO - Responsive Text: https://www.w3schools.com/howto/howto_css_responsive_text.asp*/
     @media (max-width: 800px){
         h1{
           font-size: 4.8rem;
@@ -78,7 +79,7 @@
       /*responsive code*/
     @media (max-width: 800px){
     .resources-button-container{
-justify-content: center;
+    justify-content: center;
     }
 }
     
