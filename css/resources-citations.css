@@ -31,25 +31,24 @@
   font-weight: 800;
   font-style: normal;
 }
-
-    h1{
-        position:relative;
-        font-family: "JetBrainsMono";
-        text-align: center;
-        font-size: 110px;
-        word-spacing:20%;
-        margin-bottom: 5%;
-        margin-top: -1px;
-        color: black
-    }
+h1 {
+    font-family: "JetBrainsMono";
+    font-size: 110px;
+    text-align: center;
+    margin: 0 auto 5%;
+    color: black;
+    line-height: 1.1;
+    width: fit-content; /* or remove width entirely */
+    word-spacing: normal; /* Try adjusting this */
+}
 
   /*responsive code*/
   /* How TO - Responsive Text: https://www.w3schools.com/howto/howto_css_responsive_text.asp*/
-    @media (max-width: 800px){
-        h1{
-          font-size: 4.8rem;
-        }
-      }
+  @media (max-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
 
       hr {
         border: none;
@@ -133,8 +132,15 @@
         margin-bottom: 5%;
         margin: 0 auto 5%;
         line-height: 180%;
-        justify-content:center ;
+        justify-content:center;
     }
+
+      /*responsive code*/
+      @media (max-width: 800px){
+        .resources-text{
+            font-size: 0.8rem;
+        }
+      }
 
     .resources-text a {
         color: black;
