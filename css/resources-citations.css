@@ -4,6 +4,7 @@
     
 }
 
+/*GO BACK BUTTON*/
 .go-back{
     position:relative;
 }
@@ -16,7 +17,7 @@
     margin-top: 3%;
 }
 
-  /*JetBrains: https://www.jetbrains.com/lp/mono/*/
+/*Font downloaded from JetBrains: https://www.jetbrains.com/lp/mono/*/
 @font-face {
     font-family: 'JetBrainsMono';
     src: url('../fonts/JetBrainsMono-Medium.woff2');
@@ -41,7 +42,8 @@
         margin-top: -1px;
         color: black
     }
-
+    
+  /*responsive code*/
     @media (max-width: 800px){
         h1{
           font-size: 4.8rem;
@@ -58,6 +60,8 @@
         margin-top: -3%;
       }  
 
+
+/*HEADER BUTTONS*/
     .resources-button-container {
         font-family: "JetBrainsMono";
         font-weight:400;
@@ -71,6 +75,7 @@
         font-size: 16px;
     }
 
+      /*responsive code*/
     @media (max-width: 800px){
     .resources-button-container{
 justify-content: center;
@@ -112,12 +117,6 @@ justify-content: center;
         border-color: #BA1E2A;     
     }
 
-
-    html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
-        background-image: url(../images/background-mat-long.jpg);
-        background-size: cover;
-        }
-
     h2{
         font-family: "JetBrainsMono";
         text-align: center;
@@ -133,11 +132,12 @@ justify-content: center;
         margin-bottom: 5%;
         margin: 0 auto 5%;
         line-height: 180%;
+        justify-content:center ;
     }
 
     .resources-text a {
         color: black;
-        text-decoration: none;
+        text-decoration: underline;
         transition: color 0.3s ease;
     }
     
@@ -147,3 +147,9 @@ justify-content: center;
         color: #BA1E2A; 
         text-decoration: underline; /
     }
+
+      /*BACKGROUND IMAGE*/
+      html, body{ /*Comment from Frankenscar on how to apply background image, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+        background-image: url(../images/background-mat-long.jpg);
+        background-size: cover;
+        }

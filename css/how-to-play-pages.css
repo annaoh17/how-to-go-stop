@@ -3,6 +3,7 @@
     color: black;
 }
 
+/*GO BACK BUTTON*/
 .go-back{
     position:relative;
 }
@@ -15,7 +16,7 @@
   margin-top: 3%;
 }
 
-  /*JetBrains: https://www.jetbrains.com/lp/mono/*/
+/*Font downloaded from JetBrains: https://www.jetbrains.com/lp/mono/*/
 @font-face {
     font-family: 'JetBrainsMono';
     src: url('../fonts/JetBrainsMono-Medium.woff2');
@@ -30,7 +31,7 @@
   font-style: normal;
 }
     
-
+/*HEADER BUTTONS*/
     .howtoplay-button-container {
         font-family: 'JetBrainsMono';
         display: flex;
@@ -163,6 +164,7 @@
 
   }
 
+    /*responsive code*/
   @media only screen and (max-width: 800px) {
     .point-cards {
       font-size: 1rem;
@@ -178,6 +180,7 @@
     height: auto; 
    }
 
+     /*responsive code*/
    @media only screen and (max-width: 800px) {
     .pointcard-groups img {
       width: 14%;
@@ -197,30 +200,12 @@
         cursor: pointer; 
     }
 
+      /*responsive code*/
     @media only screen and (max-width: 800px) {
       .backtotop{
         right: 3%;
       }
     }
-    
-    footer{
-      display: flex;
-      font-family: 'JetBrainsMono';
-      justify-content: flex-end;
-      text-align: right;
-      padding-right: 1.5%;
-      margin-top: 90px;
-      padding-bottom: 10px;
-      }
-    
-      .footer-links {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center; 
-        width: 100%; 
-        padding: 0 1.5%; 
-      }
     
         
 /*GAMEPLAY EXPLANATION PAGE*/
@@ -238,6 +223,7 @@ h1{
     color: black
 }
 
+  /*responsive code*/
 @media (max-width: 800px){
   h1{
     font-size: 4.2rem;
@@ -271,28 +257,36 @@ hr {
     font-family: 'JetBrainsMono';
     text-align: center;
     padding-bottom: 1.5%;
+}
 
+  /*responsive code*/
+@media (max-width: 800px){
+  .before-playing-text{
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 
 /* How to Create Flip Card Click Effect using only html & css: https://www.youtube.com/watch?v=dHHmFHI0pNw-->
-/*https://codepen.io/pantz/pen/vOXvYg*/
-/*How TO - 3D Flip Box: https://www.w3schools.com/howto/howto_css_flip_box.asp-->*/
+/*Flip Checkbox by Pontus Horn: https://codepen.io/pantz/pen/vOXvYg*/
+/*How TO - 3D Flip Box: https://www.w3schools.com/howto/howto_css_flip_box.asp*/
+/*Modified and utilized together by Anna Oh to work with my website*/
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* creates 2 columns for pics*/
+    grid-template-columns: repeat(2, 1fr); /* creates 2 columns for the pics*/
     gap: 20px;
     width: 70%; /* width of one photo grid */
     margin: 0 auto; /* centers the photo grid on the page */
     padding-bottom: 7%;
   }
   
+    /*responsive code*/
   @media only screen and (max-width: 800px) {
     .photo-grid {
       grid-template-columns: 1fr; /* photos vertical down one column */
     }
   }
-
 
   .flip-wrapper {
     position: relative;
@@ -341,7 +335,6 @@ hr {
     padding: 10px;
     box-sizing: border-box;
   }
-
   
   .flip-box-front img {
     width: 100%;
@@ -375,6 +368,7 @@ hr {
     margin-bottom: 8px;
   }
 
+  /*responsive code*/
   @media only screen and (max-width: 800px) {
     .how-to-play-section {
       grid-template-columns: 1fr; /* photos vertical down one column */
@@ -404,7 +398,8 @@ hr {
     margin-bottom: 3%;
   }
 
-   html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+  /*BACKGROUND IMAGE*/
+   html, body{ /*Comment from Frankenscarf that helped me: https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
     background-image: url(../images/background-mat-long.jpg);
     background-size: cover;
     }
@@ -432,9 +427,30 @@ hr {
   .stop-choice li{
     margin-bottom: 3%;
   }
-  
 
-  html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+/*FOOTERS*/
+  footer{
+    display: flex;
+    font-family: 'JetBrainsMono';
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 1.5%;
+    margin-top: 90px;
+    padding-bottom: 10px;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      line-height: 130%;
+      align-items: center; 
+      width: 100%; 
+      padding: 0 1.5%; 
+    }
+  
+  /*BACKGROUND IMAGE*/
+  html, body{ /*Comment from Frankenscar on how to apply background image, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
     background-image: url(../images/background-mat-long.jpg);
     background-size: cover;
     }

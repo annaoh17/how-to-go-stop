@@ -1,2 +1,2 @@
 # how-to-go-stop
- a site that helps people learn the ins and outs of go-stop
+Want to learn how to play Go-Stop! Welcome!

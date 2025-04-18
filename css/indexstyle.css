@@ -4,7 +4,7 @@
             
         }
 
-        /*JetBrains: https://www.jetbrains.com/lp/mono/*/
+/*Font downloaded from JetBrains: https://www.jetbrains.com/lp/mono/*/
         @font-face {
           font-family: 'JetBrainsMono';
           src: url('../fonts/JetBrainsMono-Medium.woff2');
@@ -59,7 +59,7 @@ body {
     height: auto;
 }
 
-/* ensure images resize properly */
+/* makes sure that the images resize properly */
 .grid-container img {
     width: 100%;  
     height: auto;  
@@ -89,6 +89,7 @@ body {
     }
 }
 
+  /*FOOTERS*/
 footer{
   display: flex;
   font-family: 'JetBrainsMono';
@@ -102,9 +103,10 @@ footer{
   .footer-links {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
+    line-height: 130%;
     align-items: center; 
-    width: 100%;
+    width: 100%; 
     padding: 0 1.5%; 
   }
 
@@ -113,7 +115,8 @@ footer{
   color: black;
 }
 
-html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+  /*BACKGROUND IMAGE*/
+html, body{ /*Comment from Frankenscar on how to apply background image, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
   background-image: url(../images/background-mat-long.jpg);
   background-size: cover;
   }
