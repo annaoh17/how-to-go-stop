@@ -1,6 +1,7 @@
 *{
     scroll-behavior: smooth;
     color:black
+    
 }
 
 .go-back{
@@ -36,7 +37,7 @@
         text-align: center;
         font-size: 110px;
         word-spacing:20%;
-        margin-bottom: 15px;
+        margin-bottom: 5%;
         margin-top: -1px;
         color: black
     }
@@ -47,11 +48,21 @@
         }
       }
 
-    .special-cards-button-container {
+      hr {
+        border: none;
+        height: 3px;
+        background-color: black; 
+        width: 76%; /* controls how long or short the line is horizontally */
+        margin-left: auto;  /* centers the line */
+        margin-right: auto;
+        margin-top: -3%;
+      }  
+
+    .resources-button-container {
         font-family: "JetBrainsMono";
         font-weight:400;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center; 
         padding-right: 1.5%;
         padding-left: 1.5%;
@@ -59,8 +70,14 @@
         padding-bottom: 10px;
         font-size: 16px;
     }
+
+    @media (max-width: 800px){
+    .resources-button-container{
+justify-content: center;
+    }
+}
     
-    .button1, .button2, .button3 {
+.button2, .button3, .button4 {
         display: inline-block;
         text-decoration: none; 
         border: 1.5px solid; 
@@ -72,104 +89,61 @@
         transition: background-color 0.4s, color 0.4s, border-color 0.4s;
     }
     
-    .button1 {
-        margin-right: auto; 
-    }
-    
-    .button2, .button3 {
+    .button2, .button3, .button4 {
         margin-left: 10px;
     }
 
-    .button1:hover, .button2:hover, .button3:hover { /*Hoverable Buttons: https://www.w3schools.com/css/css3_buttons.asp*/
+    .button2:hover, .button3:hover, .button4:hover { /*Hoverable Buttons: https://www.w3schools.com/css/css3_buttons.asp*/
         border-color: black; /* border will turn red whenn hovered over */
         background-color: #BA1E2A;
         color: beige;
     }
     
-    .button1:active, .button2:active, .button3:active {
+    .button2:active, .button3:active, .button4:active {
         color: beige;
         background-color: #681017;
         border-color: black; /* border turns darker red when it's clicked */
     }
 
-    .button1:focus, .button2:focus, .button3:focus {
+    .button2:focus, .button3:focus, .button4:focus {
         outline: 1px solid #BA1E2A; /* adds a solid outline to show focus */
         outline-offset: 1px;         /* offsets the border for button */
         background-color: #f5c6ca;  /* lighter background color to make it more noticeable */
-        border-color: #BA1E2A;      
+        border-color: #BA1E2A;     
     }
 
-    .special-cards {
-        display: block;
-        font-family: 'JetBrainsMono';
-        font-weight:400;
-        font-size: 20px;
-        text-align: center;
-        position: relative;
-    }
 
-    @media (max-width: 800px){
-        .special-cards{
-          font-size: 1rem;
-        }
-    }
-
-    .specialcard-groups{
-    margin-top: 35px;
-}
-
-   .specialcard-groups img{
-    width: 150px; 
-    height: auto; 
-   }
-
-
-   @media only screen and (max-width: 800px) {
-    .specialcard-groups img {
-      width: 15.2%;
-    }
-  }
-
-   .backtotop {
-    position: fixed;
-    bottom: 9%;
-    right: 7%;
-}
-
-.backtotop img {
-    width: 40px; 
-    height: auto;
-    cursor: pointer; 
-}
-
-@media only screen and (max-width: 800px) {
-    .backtotop{
-      right: 3%;
-    }
-  }
-
-footer{
-    display: flex;
-    font-family: 'JetBrainsMono';
-    justify-content: flex-end;
-    text-align: right;
-    padding-right: 1.5%;
-    margin-top: 90px;
-    padding-bottom: 10px;
-    }
-  
-    .footer-links {
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-      align-items: center; 
-      width: 100%; 
-      padding: 0 1.5%; 
-    }
-  
     html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
         background-image: url(../images/background-mat-long.jpg);
         background-size: cover;
         }
 
+    h2{
+        font-family: "JetBrainsMono";
+        text-align: center;
+        margin-top: 4%;
+        margin-left: 3%;
+        margin-right: 3%;
+        align-items: center;
+    }
 
+    .resources-text{
+        font-family: "JetBrainsMono";
+        width: 80%;
+        margin-bottom: 5%;
+        margin: 0 auto 5%;
+        line-height: 180%;
+    }
+
+    .resources-text a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .resources-text a:hover,
+    .resources-text a:focus,
+    .resources-text a:active {
+        color: #BA1E2A; 
+        text-decoration: underline; /
+    }

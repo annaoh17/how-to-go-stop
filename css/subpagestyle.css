@@ -3,14 +3,25 @@
     
 }
 
+  /*JetBrains: https://www.jetbrains.com/lp/mono/*/
 @font-face {
-font-family: 'JetBrains-Mono';
-src: url('../fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf');
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono-Medium.woff2');
+    font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('../fonts/JetBrainsMono-Bold.woff2') ;
+  font-weight: 800;
+  font-style: normal;
 }
 
 h1{
   position:relative;
-    font-family: 'JetBrains-Mono';
+  line-height: 120%;
+    font-family: 'JetBrainsMono';
     text-align: center;
     font-size: 110px;
     word-spacing:20%;
@@ -27,7 +38,7 @@ scroll-behavior: smooth;
 }
 
 body {
-font-family: 'JetBrains-Mono';
+font-family: 'JetBrainsMono';
 }
 
 /*LEARN THE CARDS SUBPAGE*/
@@ -37,7 +48,7 @@ font-family: 'JetBrains-Mono';
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     gap: 10px;
     width: 90%; 
     margin: auto; /* centers cards horizontally w desktop */
@@ -52,7 +63,8 @@ font-family: 'JetBrains-Mono';
 .learn-the-cards-container img {
     width: 100%;  
     height: auto;   
-    margin-bottom: 5%;   
+    margin-bottom: 5%; 
+    margin-top: 2%;  
 }
 
 .learn-the-cards-container a {
@@ -80,20 +92,22 @@ font-family: 'JetBrains-Mono';
 }
 
 footer{
-display: flex;
-font-family: 'JetBrains-Mono';
-justify-content: flex-end;
-text-align: right;
-padding-right: 1.5%;
-margin-top: 25px;
-padding-bottom: 10px;
-}
-
-.footer-links {
-display: flex; 
-gap: 20px; 
-font-size: 16px;
-}
+    display: flex;
+    font-family: 'JetBrainsMono';
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 1.5%;
+    margin-top: 90px;
+    padding-bottom: 10px;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: space-between; /* pushes them to opposite sides */
+      align-items: center;
+      width: 100%; /* or max-width if you want */
+      padding: 0 1.5%; /* add some side padding if needed */
+    }
 
 .footer-links a{
     color: black;
@@ -107,7 +121,7 @@ font-size: 16px;
     }
     
     body {
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     }
     .set-up-container {
         display: flex;
@@ -115,7 +129,7 @@ font-size: 16px;
         justify-content: center;
         text-align: center;
         font-size: 20px;
-        font-family: 'JetBrains-Mono';
+        font-family: 'JetBrainsMono';
         gap: 10px; 
         width: 90%; 
         margin: auto; /* centers cards horizontally w desktop */
@@ -124,21 +138,20 @@ font-size: 16px;
     .ppl {
         width: 30%; 
         height: auto;
-        margin-bottom: 10%;
     }
     
     /* will ensure images resize properly */
     .set-up-container img {
         width: 100%;  
         height: auto;    
-        margin-bottom: 9%;
-        margin-top: 15%;
+        margin-bottom: 15%;
+        margin-top: 26%;
     }
     
     .set-up-container a {
         text-decoration: none; 
         text-align: center;
-        color: black;
+        color: black;;
     }
 
     .set-up-container a:hover {
@@ -161,17 +174,21 @@ font-size: 16px;
 
 footer{
     display: flex;
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     justify-content: flex-end;
     text-align: right;
     padding-right: 1.5%;
-    margin-top: 90px;
     padding-bottom: 10px;
     }
 
-    .footer-links a{
-        color: black;
-      }
+      .footer-links {
+              display: flex;
+              justify-content: space-between; /* pushes the footers to opposite sides of page */
+              align-items: center;
+              width: 100%;
+              padding: 0 1.5%; 
+              margin-top: 5%;
+            }
 
 /*HOW TO PLAY SUBPAGE*/
     *{
@@ -181,7 +198,7 @@ footer{
         }
         
         body {
-        font-family: 'JetBrains-Mono';
+        font-family: 'JetBrainsMono';
         }
 
 .how-to-play-container {
@@ -190,7 +207,7 @@ footer{
     justify-content: center;
     text-align: center;
     font-size: 20px;
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     gap: 10px; 
     width: 90%; 
     margin: auto; /* centers cards horizontally w desktop */
@@ -234,17 +251,23 @@ footer{
     
 footer{
     display: flex;
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     justify-content: flex-end;
     text-align: right;
     padding-right: 1.5%;
     margin-top: 90px;
     padding-bottom: 10px;
     }
-
-    .footer-links a{
-        color: black;
-      }
+  
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center; 
+      width: 100%; /* or max-width if you want */
+      padding: 0 1.5%; /* add some side padding if needed */
+    }
+  
 
     /*SUBPAGE HEADER BUTTONS*/
         .learn-cards-button-container {
@@ -281,6 +304,7 @@ footer{
         .set-up-button-container {
             display: flex;
             justify-content: space-between;
+            text-align: center;
             align-items: center; 
             padding-right: 1.5%;
             padding-left: 1.5%;
@@ -305,6 +329,25 @@ footer{
         
         .button2, .button3 {
             margin-left: 10px;
+        }
+
+        .button1:hover, .button2:hover, .button3:hover { /*Hoverable Buttons: https://www.w3schools.com/css/css3_buttons.asp*/
+            border-color: black; /* border will turn red whenn hovered over */
+            background-color: #BA1E2A;
+            color: beige;
+        }
+        
+        .button1:active, .button2:active, .button3:active {
+            color: beige;
+            background-color: #681017;
+            border-color: black; /* border turns darker red when it's clicked */
+        }
+
+        .button1:focus, .button2:focus, .button3:focus {
+            outline: 1px solid #BA1E2A; /* adds a solid outline to show focus */
+            outline-offset: 1px;        /* offsets the border for button */
+            background-color: #f5c6ca;  /* lighter background color to make it more noticeable */
+            border-color: #BA1E2A;      
         }
 
         .play-button-container {
@@ -349,7 +392,14 @@ footer{
             border-color: black; /* border turns darker red when it's clicked */
         }
 
-        body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
-            background-image: url(../images/background-mat-opacity.jpg);
+        .button1:focus, .button2:focus, .button3:focus {
+            outline: 1px solid #BA1E2A; /* adds a solid outline to show focus */
+            outline-offset: 1px;       /* offsets the border for button */
+            background-color: #f5c6ca;  /* lighter background color to make it more noticeable */
+            border-color: #BA1E2A;    
+        }
+
+        html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+            background-image: url(../images/background-mat-long.jpg);
             background-size: cover;
-          }
+            }

@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono-Medium.woff2');
+    font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('../fonts/JetBrainsMono-Bold.woff2') ;
+  font-weight: 800;
+  font-style: normal;
+}
+
+ /* general font styling */
+ body,
+ h2,
+ h3,
+ .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg header {
+   font-family: "JetBrainsMono", monospace;
+ }
+ 
+ body {
+   background-color: #fff;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 1.75em;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   -webkit-text-size-adjust: 100%;
+   justify-content: center;
+ }
+ 
+ h3 {
+   font-size: 24px;
+ }
+ 
+ h3 {
+   color: black;
+ }
+ 
+ .accHorizontal {
+   max-width: 100%;
+   overflow: hidden;
+   padding: 80px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row nowrap;
+ }
+ 
+ .accHorizontal .accHorizontal__item {
+   margin: 0 20px;
+   position: relative;
+   flex: 1 0 250px;
+ }
+ 
+ .accHorizontal .accHorizontal__item .acc_cBox {
+   width: 250px;
+   overflow: hidden;
+   position: relative;
+   transition: width 0.3s ease;
+ }
+ 
+ .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg {
+   width: 250px;
+   float: left;
+   margin-right: 20px;
+   position: relative;
+   transition: 0.3s ease;
+ }
+ 
+ .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg img {
+   width: 100%;
+   margin-bottom: 10px;
+ }
+ 
+ .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg header {
+   font-size: 16px;
+   transition: all 0.3s ease-in;
+ }
+ 
+ .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg header h3 {
+  text-align: center;
+  font-size: 100%;
+ }
+ 
+ .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg header p {
+   margin: 0;
+ }
+ 
+ /* Styling for the content */
+ .accHorizontal .accHorizontal__item .acc_cCont {
+   width: 490px;
+   font-size: 10pt;
+   max-height: 500px;
+   margin-left: 260px;
+   background-color: #a8aa92;
+   padding: 2%  /*top right bottom left;*/
+ }
+ 
+ .accHorizontal .accHorizontal__item .state {
+   position: absolute;
+   top: -1000vh;
+   left: 0;
+   display: none;
+ }
+ 
+ .accHorizontal .accHorizontal__item .backdrop {
+   position: absolute;
+   z-index: 3;
+   width: 250px;
+   height: 100%;
+ }
+ 
+ 
+ .accHorizontal .accHorizontal__item .backdrop:hover > .fa {
+   opacity: 1;
+ }
+ 
+ /* Hover and state checked styles */
+ .accHorizontal .accHorizontal__item .state:checked ~ .acc_cBox {
+   width: 820px;
+ }
+ 
+ .accHorizontal .accHorizontal__item .backdrop:hover ~ .acc_cBox > .acc_cImg > header h3,
+ .accHorizontal .accHorizontal__item .backdrop:hover ~ .acc_cBox > .acc_cImg > header p,
+ .accHorizontal .accHorizontal__item .state:checked ~ .acc_cBox > .acc_cImg > header h3,
+ .accHorizontal .accHorizontal__item .state:checked ~ .acc_cBox > .acc_cImg > header p {
+   color: #BA1E2A;
+ }
+ 
+ /* Mobile Styles */
+ @media only screen and (max-width: 767px) {
+   .accHorizontal {
+     flex-flow: column nowrap;
+   }
+ 
+   .accHorizontal .accHorizontal__item {
+     margin-bottom: 20px;
+   }
+ 
+   .accHorizontal .accHorizontal__item .acc_cBox {
+     max-height: 400px;
+     margin: auto;
+     transition: max-height 0.5s ease-in-out;
+   }
+ 
+   .accHorizontal .accHorizontal__item .acc_cBox .acc_cImg {
+     float: none;
+     margin: auto;
+     margin-bottom: 20px;
+   }
+ 
+   .accHorizontal .accHorizontal__item .acc_cBox .acc_cCont {
+     width: 250px;
+     margin: auto;
+     min-height: auto;
+     max-height: none;
+   }
+ 
+   .accHorizontal .accHorizontal__item .state:checked ~ .acc_cBox {
+     width: inherit;
+     max-height: 2000px;
+   }
+ 
+   .accHorizontal .accHorizontal__item .backdrop {
+     width: 100%;
+   }
+ 
+   .accHorizontal .accHorizontal__item .backdrop > .fa {
+     top: 110px;
+   }
+ }
+
+  /* How to Create Flip Card Click Effect using only html & css: https://www.youtube.com/watch?v=dHHmFHI0pNw-->
+/*https://codepen.io/pantz/pen/vOXvYg*/
+/*How TO - 3D Flip Box: https://www.w3schools.com/howto/howto_css_flip_box.asp-->*/
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* creates 2 columns for pics*/
+    gap: 20px;
+    width: 70%; /* width of one photo grid */
+    margin: 0 auto; /* centers the photo grid on the page */
+    padding-bottom: 7%;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .photo-grid {
+      grid-template-columns: 1fr; /* photos vertical down one column */
+    }
+  }
+
+
+  .flip-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 5 / 8; /* CSS aspect-ratio Property: https://www.w3schools.com/cssref/css_pr_aspect-ratio.php 
+    (makes image responsive with the images width and height) */
+  }
+  
+  .flip-toggle {
+    display: none; /* this will hide the checkbox that is used for this effect*/
+  }
+  
+  .flip-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /* the 3D flip effect */
+    cursor: pointer;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* the flip effect when it's clicked */
+  .flip-toggle:checked + .flip-box .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  .flip-box-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* the design and styling on the back of the image */
+  .flip-box-back {
+    background-color: #a8aa92;
+    font-family: "JetBrainsMono";
+    color: black;
+    transform: rotateY(180deg);
+    text-align: center; 
+    padding: 10px;
+  }
+
+  .how-to-play-section {
+    font-family: 'JetBrainsMono';
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns: image | text */
+    width: 77%;
+    margin: 0 auto;
+    align-items: start;
+    padding-bottom: 5%;
+  }
+  
+  .instructions li {
+    font-size: 12pt;
+    line-height: 1.56;
+    margin-bottom: 8px;
+  }

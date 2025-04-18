@@ -1,5 +1,6 @@
 *{
     scroll-behavior: smooth;
+    color: black;
 }
 
 .go-back{
@@ -7,72 +8,31 @@
 }
 
 .go-back img{
-    width: 40px; 
-    height: auto;
-    cursor: pointer;
-    margin-left: 120px;
-    margin-top: 17px;
+  width: 40px; 
+  height: auto;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-top: 3%;
 }
 
-/*custom fonts: 
+  /*JetBrains: https://www.jetbrains.com/lp/mono/*/
 @font-face {
-    font-family: 'Gluten-Backslant';
-    src: url('/fonts/Gluten-Bold.woff');
-    src: url('/fonts/Gluten-Bold.woff2');
-    }
-
-    h1{
-        position:relative;
-        font-family: "Gluten-Backslant";
-        text-align: center;
-        font-size: 110px;
-        word-spacing:20%;
-        margin-bottom: 15px;
-        margin-top: -1px;
-        color: black
-    }
-    */
-
-@font-face {
-    font-family: 'JetBrains-Mono';
-    src: url('../fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf');
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono-Medium.woff2');
+    font-weight: 400;
+  font-style: normal;
 }
-        h1{
-          position:relative;
-            font-family: 'JetBrains-Mono';
-            text-align: center;
-            font-size: 120px;
-            word-spacing:20%;
-            margin-bottom: 1%;
-            margin-top: -1px;
-            color: black
-        }
 
-    .points-paragraphs {
-        display: flex;
-        justify-content: center;  /* centers content horizontally */
-        align-items: center;      /* centers content vertically */
-        flex-direction: column;   /* ensures elements stack vertically */
-        font-family: 'JetBrains Mono';
-        text-align: center;       /* text is centered aligned */
-        width: 100%;              /* the width in order to center it properly on the page*/
-    }
-    
-    .points-paragraphs p {
-        width: 65%; /* controls the width of the text block */
-        margin: 4% auto; /* this centers item within the container */
-    }
-    
-    .points-paragraphs p span {
-        display: block;
-        font-size: 14pt;
-        line-height: 1.56;
-        margin-bottom: 4%;
-    }
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('../fonts/JetBrainsMono-Bold.woff2') ;
+  font-weight: 800;
+  font-style: normal;
+}
     
 
     .howtoplay-button-container {
-        font-family: 'JetBrains-Mono';
+        font-family: 'JetBrainsMono';
         display: flex;
         justify-content: space-between;
         align-items: center; 
@@ -116,9 +76,55 @@
         border-color: black; /* border turns darker red when it's clicked */
     }
 
+    .button1:focus, .button2:focus, .button3:focus {
+      outline: 1px solid #BA1E2A; /* adds a solid outline to show focus */
+      outline-offset: 1px;        /* offsets the border for button */
+      background-color: #f5c6ca;  /* lighter background color to make it more noticeable */
+      border-color: #BA1E2A;      
+  }
+
+  /*POINTS SYSTEM PAGE*/
+
+  
+    h1{
+      display: flex;
+      position:relative;
+        font-family: "JetBrainsMono";
+        text-align: center;
+        justify-content: center;
+        font-size: 120px;
+        word-spacing:20%;
+        margin-bottom: 1%;
+        margin-top: -1px;
+        color: black
+    }
+
+
+.points-paragraphs {
+    display: flex;
+    justify-content: center;  /* centers content horizontally */
+    align-items: center;      /* centers content vertically */
+    flex-direction: column;   /* ensures elements stack vertically */
+    font-family: 'JetBrainsMono';
+    text-align: center;       /* text is centered aligned */
+    width: 100%;              /* the width in order to center it properly on the page*/
+}
+
+.points-paragraphs p {
+    width: 65%; /* controls the width of the text block */
+    margin: 4% auto; /* this centers item within the container */
+}
+
+.points-paragraphs p span {
+    display: block;
+    font-size: 14pt;
+    line-height: 1.56;
+    margin-bottom: 4%;
+}
+
     .point-cards{
         position:relative;
-        font-family: 'JetBrains Mono';
+        font-family: 'JetBrainsMono';
         font-size: 20px;
         text-align: center;
         align-items: center;
@@ -126,77 +132,130 @@
 
     .point-cards p{
         margin-bottom: 0.5%;
-        padding-top: 2%;
-        text-decoration: underline
+        padding-top: 2%; 
+        
     }
 
-   
-    .point-cards span{
-        text-decoration: underline;
+    .point-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'JetBrainsMono';
+      font-size: 20px;
+      text-align: center;
     }
+
+  .point-cards p{
+      margin-bottom: 0.5%;
+      padding-top: 2%; 
+      
+  }
+
+  p.double {
+    outline-style: double;
+    outline-width: 6px;       
+    outline-color: black;     
+    background-color: #a8aa92;
+    padding: 10px;     
+   margin-top: 5%; 
+    width: 50%;
+    text-align: center;
+
+  }
+
+  @media only screen and (max-width: 800px) {
+    .point-cards {
+      font-size: 1rem;
+    }
+  }
 
     .pointcard-groups{
-    margin-top: 35px;
+    margin-top: 2%;
 }
 
    .pointcard-groups img{
-    width: 200px; 
+    width: 150px; 
     height: auto; 
-    margin: 6px;
-    margin-top: -1%;
-    margin-bottom: 4%;
    }
 
-   .pointcard-groups p{
-text-decoration: underline;
-   }
-
-
-    .backtotop {
-        position: fixed;
-        bottom: 70px;
-        right: 100px;
+   @media only screen and (max-width: 800px) {
+    .pointcard-groups img {
+      width: 14%;
     }
+  }
+
+   .backtotop {
+    position: fixed;
+    bottom: 9%;
+    right: 7%;
+}
+
     
     .backtotop img {
         width: 40px; 
         height: auto;
         cursor: pointer; 
     }
-    
-        footer{
-            display: flex;
-            font-family: 'JetBrains-Mono';
-            justify-content: flex-end;
-            text-align: right;
-            padding-right: 1.5%;
-            margin-top: 90px;
-            padding-bottom: 10px;
-            font-size: 16px;
-            }
 
-            .footer-links a{
-                color: black;
-              }
-    
-    body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
-    background-image: url(../images/background-mat-long.jpg);
-    background-size: cover;
+    @media only screen and (max-width: 800px) {
+      .backtotop{
+        right: 3%;
+      }
     }
+    
+    footer{
+      display: flex;
+      font-family: 'JetBrainsMono';
+      justify-content: flex-end;
+      text-align: right;
+      padding-right: 1.5%;
+      margin-top: 90px;
+      padding-bottom: 10px;
+      }
+    
+      .footer-links {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center; 
+        width: 100%; 
+        padding: 0 1.5%; 
+      }
+    
         
 /*GAMEPLAY EXPLANATION PAGE*/
+
+h1{
+  display: flex;
+  position:relative;
+  font-family: 'JetBrainsMono';
+    text-align: center;
+    justify-content: center;
+    font-size: 120px;
+    word-spacing:20%;
+    margin-bottom: 1%;
+    margin-top: -1px;
+    color: black
+}
+
+@media (max-width: 800px){
+  h1{
+    font-size: 4.2rem;
+  }
+}
+
 hr {
     border: none;
     height: 3px;
     background-color: black; 
     width: 76%; /* controls how long or short the line is horizontally */
     margin-left: auto;  /* centers the line */
-    margin-right: auto; /* also centers the line */
-    margin-top: -40;
+    margin-right: auto;
+    margin-top: -3%;
   }  
 
   .before-playing-text{
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     line-height: 1.56;
     align-items: center; 
     text-align: center;
@@ -209,7 +268,7 @@ hr {
 }
 
 .before-playing-text-subheading{
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     text-align: center;
     padding-bottom: 1.5%;
 
@@ -221,13 +280,20 @@ hr {
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* creates 2 columns */
+    grid-template-columns: repeat(2, 1fr); /* creates 2 columns for pics*/
     gap: 20px;
     width: 70%; /* width of one photo grid */
     margin: 0 auto; /* centers the photo grid on the page */
     padding-bottom: 7%;
   }
   
+  @media only screen and (max-width: 800px) {
+    .photo-grid {
+      grid-template-columns: 1fr; /* photos vertical down one column */
+    }
+  }
+
+
   .flip-wrapper {
     position: relative;
     width: 100%;
@@ -255,7 +321,7 @@ hr {
     transform-style: preserve-3d;
   }
   
-  /* the flip effect when it's clicked (when the hidden checkbox is checked) */
+  /* the flip effect when it's clicked */
   .flip-toggle:checked + .flip-box .flip-box-inner {
     transform: rotateY(180deg);
   }
@@ -283,10 +349,10 @@ hr {
     object-fit: cover;
   }
   
-  /* the design and styling on the back of the image */
+  /* the design and styling on the back of the image when flipped */
   .flip-box-back {
     background-color: #a8aa92;
-    font-family: 'JetBrains-Mono';
+    font-family: "JetBrainsMono";
     color: black;
     transform: rotateY(180deg);
     text-align: center; 
@@ -294,9 +360,9 @@ hr {
   }
 
   .how-to-play-section {
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     display: grid;
-    grid-template-columns: 1fr 1fr; /* two columns: image | text */
+    grid-template-columns: 1fr 1fr; /* two columns: image, text */
     width: 77%;
     margin: 0 auto;
     align-items: start;
@@ -307,6 +373,12 @@ hr {
     font-size: 12pt;
     line-height: 1.56;
     margin-bottom: 8px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .how-to-play-section {
+      grid-template-columns: 1fr; /* photos vertical down one column */
+    }
   }
   
   .organization-cards-container img {
@@ -321,7 +393,7 @@ hr {
   }
 
   .other-conditions {
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     font-size: 12pt;
     line-height: 1.56;
     width: 60%;
@@ -332,6 +404,12 @@ hr {
     margin-bottom: 3%;
   }
 
+   html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+    background-image: url(../images/background-mat-long.jpg);
+    background-size: cover;
+    }
+
+
   /*HOW TO USE "GO" AND "STOP" PAGE*/
   .go-stop-hr{
     border: none;
@@ -339,12 +417,12 @@ hr {
     background-color: black; 
     width: 76%; /* controls how long or short the line is horizontally */
     margin-left: auto;  /* centers the line */
-    margin-right: auto; /* also centers the line */
+    margin-right: auto; 
     margin-top: 2%;
   }  
 
   .stop-choice {
-    font-family: 'JetBrains-Mono';
+    font-family: 'JetBrainsMono';
     font-size: 12pt;
     line-height: 1.56;
     width: 60%;
@@ -355,3 +433,8 @@ hr {
     margin-bottom: 3%;
   }
   
+
+  html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+    background-image: url(../images/background-mat-long.jpg);
+    background-size: cover;
+    }

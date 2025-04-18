@@ -12,18 +12,27 @@
     width: 40px; 
     height: auto;
     cursor: pointer;
-    margin-left: 120px;
-    margin-top: 17px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+  /*JetBrains: https://www.jetbrains.com/lp/mono/*/
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono-Medium.woff2');
+    font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'JetBrains-Mono';
-    src: url('../fonts/JetBrains-Mono/JetBrainsMono-VariableFont_wght.ttf');
-    }
-
+  font-family: 'JetBrainsMono';
+  src: url('../fonts/JetBrainsMono-Bold.woff2') ;
+  font-weight: 800;
+  font-style: normal;
+}
     h1{
         position:relative;
-        font-family: 'JetBrains-Mono';
+        font-family: 'JetBrainsMono';
         text-align: center;
         font-size: 110px;
         word-spacing:20%;
@@ -32,8 +41,15 @@
         color: black
     }
 
+    @media (max-width: 800px){
+        h1{
+          font-size: 4.8rem;
+        }
+      }
+
     .suit-cards-button-container {
-        font-family: 'JetBrains-Mono';
+        font-family: 'JetBrainsMono';
+        font-weight: 400;
         display: flex;
         justify-content: space-between;
         align-items: center; 
@@ -76,11 +92,25 @@
         border-color: black; /* border turns darker red when it's clicked */
     }
 
+    .button1:focus, .button2:focus, .button3:focus {
+        outline: 1px solid #BA1E2A; /* adds a solid outline to show focus */
+        outline-offset: 1px;    /* offsets the border for button */
+        background-color: #f5c6ca;  /* lighter background color to make it more noticeable */
+        border-color: #BA1E2A;      
+    }
+
     .suit-cards{
         position:relative;
-        font-family: 'JetBrains-Mono';
+        font-family: 'JetBrainsMono';
+         font-weight: 400;
         font-size: 20px;
         text-align: center;
+    }
+
+    @media (max-width: 800px){
+        .suit-cards{
+          font-size: 1rem;
+        }
     }
 
     .suitcard-groups{
@@ -90,13 +120,18 @@
    .suitcard-groups img{
     width: 150px; 
     height: auto; 
-    margin: 6px;
    }
+
+   @media only screen and (max-width: 800px) {
+    .suitcard-groups img {
+      width: 15.2%;
+    }
+  }
 
    .backtotop {
     position: fixed;
-    bottom: 70px;
-    right: 100px;
+    bottom: 9%;
+    right: 7%;
 }
 
 .backtotop img {
@@ -105,20 +140,35 @@
     cursor: pointer; 
 }
 
-    footer{
-        display: flex;
-        font-family: 'JetBrains-Mono';
-        justify-content: flex-end;
-        text-align: right;
-        padding-right: 1.5%;
-        margin-top: 90px;
-        padding-bottom: 10px;
-        font-size: 16px;
-        }
+@media only screen and (max-width: 800px) {
+    .backtotop{
+      right: 3%;
+    }
+  }
 
-    body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
-         background-image: url(../images/background-mat-long.jpg);
-         background-size: cover;
+footer{
+    display: flex;
+    font-family: 'JetBrainsMono';
+    justify-content: flex-end;
+    text-align: right;
+    padding-right: 1.5%;
+    margin-top: 90px;
+    padding-bottom: 10px;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center; 
+      width: 100%;
+      padding: 0 1.5%;
+    }
+  
+
+    html, body{ /*Comment from Frankenscarf, https://stackoverflow.com/questions/21374534/css-background-image-not-loading*/
+        background-image: url(../images/background-mat-long.jpg);
+        background-size: cover;
         }
-          
-    
+        
+     
