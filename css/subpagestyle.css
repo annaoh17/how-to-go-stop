@@ -132,7 +132,7 @@ footer{
         font-family: 'JetBrainsMono';
         gap: 10px; 
         width: 90%; 
-        margin: auto; /* centers cards horizontally w desktop */
+        margin: auto; /* centers cards horizontally with desktop */
     }
     
     .ppl {
@@ -192,7 +192,7 @@ footer{
     font-family: 'JetBrainsMono';
     gap: 10px; 
     width: 90%; 
-    margin: auto; /* centers cards horizontally w desktop */
+    margin: auto; /* centers cards horizontally with desktop */
 }
 
 .cards4 {
@@ -246,8 +246,8 @@ footer{
       justify-content: space-between;
       text-align: center;
       align-items: center; 
-      width: 100%; /* or max-width if you want */
-      padding: 0 1.5%; /* add some side padding if needed */
+      width: 100%;
+      padding: 0 1.5%; 
     }
   
 
